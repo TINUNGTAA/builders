@@ -7,7 +7,7 @@ const Trust = () => {
     <div>
       <HeroLayout backgroundImage={assets.trust.bg6}>
         <div className="text-white text-center">
-          <h1 className="text-[48px] font-bold  ">
+          <h1 className="text-[64px] font-bold  ">
             How Trust <br />
             Is
             <span className="text-brown px-3">Built</span>{" "}
@@ -79,17 +79,17 @@ const Trust = () => {
           ensure your hard-earned family resources aren't in the wrong hands.
         </p>
 
-       
+
       </div>
 
       <div className=" flex rounded-full mx-auto items-center w-[680px] h-[680px]  mb-16  border-brown border-[5px]  bg-gray-500">
         <div className=" flex-col items-center justify-center mx-auto w-[654px] h-[654px]   border-brown border-[5px]  rounded-full bg-blue space-y-6 px-24 py-12">
-          <img src={assets.trust.badge} className="mx-auto"/>
-          <img src={assets.home.logo} className="mx-auto"/>
-          
-          <p className="text-[32px] font-medium text-white text-center">We've made trust our cornerstone by building it 
+          <img src={assets.trust.badge} className="mx-auto" />
+          <img src={assets.home.logo} className="mx-auto" />
+
+          <p className="text-[32px] font-medium text-white text-center">We've made trust our cornerstone by building it
             in to everything we do,
-             brick by brick and day after day.</p>
+            brick by brick and day after day.</p>
 
 
         </div>
@@ -99,8 +99,8 @@ const Trust = () => {
         <div className="flex flex-col items-start  w-1/3">
           <img src={assets.trust.house} className="w-2/5 mx-auto" />
 
-          <p className="text-[32px] text-center text-[#172447] mt-6">Floor plans designed for 
-          <br />
+          <p className="text-[32px] text-center text-[#172447] mt-6">Floor plans designed for
+            <br />
             <span className="font-semibold">LIVABILITY</span>
           </p>
         </div>

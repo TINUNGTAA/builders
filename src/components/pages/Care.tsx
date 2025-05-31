@@ -7,9 +7,9 @@ const Care = () => {
     <div>
       <HeroLayout backgroundImage={assets.care.bg8}>
         <div className="text-white text-center">
-          <h1 className="text-5xl font-bold  leading-normal">
+          <h1 className="text-[64px] font-bold  leading-normal">
             CUSTOMER CARE <br />
-            WITH A<span className="text-brown px-2">HEART</span>{" "}
+            WITH A<span className="text-brown px-2">Heart</span>{" "}
           </h1>
         </div>
       </HeroLayout>
