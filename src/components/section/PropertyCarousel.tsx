@@ -46,20 +46,6 @@ const PropertySection: React.FC = () => {
       planImage: assets.home.plan3,
       planLink: "#",
     },
-    {
-      image: assets.home.moory,
-      tagLeft: "Central",
-      tagRight: "C30,000",
-      title: "Moory Land Fields",
-      location: "18,Maccaulay way",
-      city: "Northern",
-      bedrooms: 3,
-      sofas: 2,
-      washrooms: 4,
-      kitchens: 2,
-      planImage: assets.home.plan3,
-      planLink: "#",
-    },
   ];
 
   const [startIndex, setStartIndex] = useState(0);
@@ -78,25 +64,37 @@ const PropertySection: React.FC = () => {
   const visibleCards = cards.slice(startIndex, startIndex + cardsPerPage);
 
   return (
-    <div className="flex items-center justify-center bg-[#B9BFCD]  w-full gap-6">
+    <div className="relative font-inter bg-[#B9BFCD] w-full">
       {/* Left Arrow */}
-      <button onClick={handlePrev} disabled={startIndex === 0}>
-        <img src={assets.home.arrowBack} alt="Previous" />
+      <button
+        onClick={handlePrev}
+        disabled={startIndex === 0}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md disabled:opacity-50"
+      >
+        <img src={assets.home.arrowBack} alt="Previous" className="w-6 h-6" />
       </button>
 
-      {/* Property Cards */}
-      <div className="flex gap-6">
-        {visibleCards.map((card, index) => (
-          <PropertyCard key={index} {...card} />
-        ))}
+      <div className="flex justify-center">
+        <div
+          className={`flex gap-6 ${
+            visibleCards.length === 1
+              ? "justify-center w-[350px]"
+              : "w-[calc(350px*2+24px)]"
+          }`}
+        >
+          {visibleCards.map((card, index) => (
+            <PropertyCard key={index} {...card} />
+          ))}
+        </div>
       </div>
 
       {/* Right Arrow */}
       <button
         onClick={handleNext}
         disabled={startIndex + cardsPerPage >= cards.length}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md disabled:opacity-50"
       >
-        <img src={assets.home.arrowForword} alt="Next" />
+        <img src={assets.home.arrowForword} alt="Next" className="w-6 h-6" />
       </button>
     </div>
   );

@@ -8,10 +8,10 @@ import PropertySection from "../section/PropertyCarousel";
 
 const Landing: React.FC = () => {
   return (
-    <section>
+    <section className="font-inter">
       <Hero />
 
-      <div className="flex px-28 gap-16 justify-between items-center py-20 ">
+      <div className="flex  px-28 gap-16 justify-between items-center py-20 ">
         {/* left */}
         <div className="  ">
           <h1 className=" text-[#625B71] text-[48px]  font-semibold">
@@ -67,7 +67,7 @@ const Landing: React.FC = () => {
             </h1>
 
             <div className="flex gap-12 justify-center items-center mt-10">
-              <button className="py-2 px-8 text-xl text-center text-white rounded-lg bg-brown">
+              <button className="py-2 px-8 text-xl leading-none text-center text-white rounded-lg bg-brown">
                 Login
               </button>{" "}
               or

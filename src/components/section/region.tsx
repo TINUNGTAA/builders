@@ -15,10 +15,10 @@ const RegionCard: React.FC<RegionCardProps> = ({
 }) => {
   return (
     <div
-      className="flex gap-[250px] items-center justify-center px-20 h-[50vh] bg-cover mb-6 bg-center"
+      className="flex font-inter gap-[250px] items-center justify-center px-20 h-[50vh] bg-cover mb-6 bg-center"
       style={{
         backgroundImage: `radial-gradient(circle, #000000B2, #1E305E), url(${backgroundImage})`,
-        backgroundBlendMode: 'overlay'
+        backgroundBlendMode: "overlay",
       }}
     >
       {/* left */}

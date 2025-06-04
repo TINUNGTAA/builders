@@ -16,7 +16,7 @@ const Band: React.FC = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="font-inter w-full">
       <div className="flex flex-col sm:flex-row w-full">
         {/* Left Side: Discover the Experience */}
         <div className="bg-[#E9EAEF] w-full sm:w-auto text-center sm:text-left py-6 sm:py-10 px-4 sm:px-28 text-sm sm:text-xl">

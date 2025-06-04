@@ -11,7 +11,12 @@ export default {
         blue: '#1E305E',
         dark_blue: '#0D162A',
         brown: '#CD9F70',
-      }
+      },
+
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
+
     },
   },
   plugins: [],

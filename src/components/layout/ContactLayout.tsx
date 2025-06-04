@@ -11,7 +11,7 @@ const ContactLayout: React.FC<BackgroundLayoutProps> = ({
   children,
 }) => {
   return (
-    <section className="flex flex-col h-screen overflow-hidden">
+    <section className="flex flex-col font-inter h-screen overflow-hidden">
       <div
         className="w-full h-full bg-cover bg-center relative flex flex-col"
         style={{ backgroundImage: `url(${backgroundImage})` }}
