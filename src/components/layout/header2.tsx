@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="w-full bg-blue px-4 sm:px-28 py-4 relative">
+    <header className="w-full md:bg-blue px-4 sm:px-28 py-4 relative">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
@@ -38,21 +38,21 @@ const Header: React.FC = () => {
                 <img
                   src={assets.home.arrowDown}
                   alt="arrow"
-                  className="h-[6px] w-2.5 "
+                  className="h-[6px] w-2.5"
                 />
               </Link>
             </li>
           ))}
         </ul>
 
-        {/* Hamburger / Close Button (only on mobile) */}
+        {/* Hamburger /  */}
         <button
           className="sm:hidden text-white focus:outline-none"
           onClick={() => setIsMenuOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
-            // Close (X) Icon
+            
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -87,7 +87,7 @@ const Header: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Menu (slides down when isMenuOpen = true) */}
+      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="sm:hidden bg-blue mt-2 py-4 space-y-2">
           {navItems.map((item) => (
@@ -95,7 +95,7 @@ const Header: React.FC = () => {
               key={item.name}
               to={item.href}
               onClick={() => setIsMenuOpen(false)}
-              className=" text-white text-lg flex items-center gap-2 px-4 py-2 hover:bg-blue-700 transition-colors"
+              className="text-white text-lg flex items-center gap-2 px-4 py-2 hover:bg-blue-700 transition-colors"
             >
               {item.name}
               <img

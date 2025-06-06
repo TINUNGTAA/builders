@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="flex flex-col h-screen overflow-hidden">
+    <section className="flex flex-col h-screen font-inter overflow-hidden">
       <div
         className="w-full h-full bg-cover bg-center relative transition-all duration-1000 ease-in-out"
         style={{
@@ -33,17 +33,19 @@ const Hero: React.FC = () => {
         }}
       >
         <Head />
-        <div className="flex items-center justify-center h-full">
-          <button className="w-[315px] mt-6 h-10 px-4 flex items-center gap-2 text-gray-500 text-xl rounded-lg bg-white shadow-sm">
-            <span>
-              <img
-                src={assets.home.search_icon}
-                alt="search icon"
-                className="h-8 w-8"
-              />
-            </span>
-            Search
-          </button>
+        <div className="flex items-center justify-center h-[880px] ">
+          <div className="relative w-[315px]  text-xl  mt-6">
+            <input
+              type="text"
+              placeholder="Search"
+              className="w-full h-[44px] pl-12 pr-4 text-gray-500 text-xl rounded-xl bg-white shadow-sm outline-none"
+            />
+            <img
+              src={assets.home.search_icon}
+              alt="search icon"
+              className="absolute left-4 top-6 transform -translate-y-1/2 h-6 w-6"
+            />
+          </div>
         </div>
 
         <div className="absolute bottom-0 w-full">

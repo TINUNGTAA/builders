@@ -12,16 +12,18 @@ const HeroLayout: React.FC<BackgroundLayoutProps> = ({
   children,
 }) => {
   return (
-    <section className="flex flex-col h-screen overflow-hidden">
+    <section className="flex flex-col  font-inter overflow-hidden">
       <div
-        className="w-full h-full bg-cover bg-center relative flex flex-col"
+        className="w-full h-full bg-cover bg-no-repeat bg-center relative flex flex-col"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
+         <div className="absolute inset-0 bg-black/50 md:hidden" />
+
         {/* Responsive Header */}
         <Header />
 
         {/* Centered Content (pushed down so it doesn’t sit under the header) */}
-        <div className="flex flex-1 items-center justify-center mt-20 px-4 sm:px-8">
+        <div className="flex flex-1 items-center justify-center md:mb-[150px] sm:px-8">
           {children}
         </div>
 

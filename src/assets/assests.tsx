@@ -43,6 +43,8 @@ import washroom from "./images/home/washroom.svg";
 import sofa from "./images/home/sofa.svg";
 import plan2 from "./images/home/plan2.svg";
 import plan3 from "./images/home/plan3.svg";
+import hambeger from "./images/home/hambeger.svg";
+import cross from "./images/home/cross.svg";
 import bg2 from "./images/home/bg2.jpg";
 import bg3 from "./images/home/bg3.jpg";
 import bg4 from "./images/home/bg4.jpg";
@@ -130,6 +132,8 @@ const assets = {
     image5,
   },
   home: {
+    hambeger,
+    cross,
     heart,
     accra,
     bonoMap,

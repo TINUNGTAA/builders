@@ -1,74 +1,59 @@
-
-
 import About from "./components/pages/About";
-import HousePlane from "./components/pages/HousePlane";
 import Landing from "./components/pages/landingPage";
 import Care from "./components/pages/Care";
 import Process from "./components/pages/Process";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Trust from "./components/pages/Trust";
-import Contact from "./components/pages/Contact";
-import TeamCard from "./components/layout/TeamCard";
 import Gallery from "./components/section/Gallery";
-import PropertySection from   "./components/section/PropertyCarousel";
+import  {HeroSmall}  from "./components/section/HeroSmall";
 export default function App() {
-
   const router = createBrowserRouter([
     {
-      path : '/',
-      element: <Landing/>
+      path: "/",
+      element: <Landing />,
+      
     },
 
     {
-      path : '/about',
-      element: <About/>
+      path: "/about",
+      element: <About />,
+     
     },
 
     {
-      path : '/customer-care',
-      element: <Care/>
+      path: "/customer-care",
+      element: <Care />,
+     
     },
 
     {
-      path : '/trust-us',
-      element: <Trust/>
-    },
-
-    {
-      path : '/plan',
-      element: <HousePlane/>
-    },
-    {
-      path : '/contact',
-      element: <Contact/>
-    },
-    {
-      path : 'gallery',
-      element: <Gallery/>
-    },
-
-
-    {
-      path : '/card',
-      element: <TeamCard/>
-    },
-
-
-    {
-      path : '/process',
-      element: <Process/>
-    },
-
-    {
-      path : '/property',
-      element: < PropertySection/>
+      path: "/trust-us",
+      element: <Trust />,
+     
     },
 
    
 
+   
+    {
+      path: "gallery",
+      element: <Gallery />,
+     
+    },
 
+    {
+      path: "/process",
+      element: <Process />,
+    },
+
+    {
+      path: "/Small",
+      element:< HeroSmall />,
+    },
+
+   
   ]);
 
-  return  <RouterProvider router={router}/>
+  return <RouterProvider router={router} />;
+ 
 }
-

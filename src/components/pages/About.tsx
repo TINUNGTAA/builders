@@ -5,13 +5,13 @@ import TeamCardRotator from "../section/Team";
 
 const About: React.FC = () => {
   return (
-    <div>
+    <div className="font-inter">
       <HeroLayout backgroundImage={assets.about.bgAbout}>
-        <div className="text-white text-center">
-          <h1 className="text-[64px] font-bold">
+        <div className="text-white  h-[550px] flex items-center justify-center text-center">
+          <h1 className="text-[64px] font-bold  ">
             About Us at
             <br />
-            <span className="text-brown">Honest Builders</span>
+            <span className="text-brown">Honest Builders</span>{" "}
           </h1>
         </div>
       </HeroLayout>
@@ -26,21 +26,21 @@ const About: React.FC = () => {
         </p>
       </div>
 
-      <div className="px-12 py-10">
+      <div className="px-12 py-10  flex flex-col items-center">
         <img
           src={assets.about.pictures}
-          className="h-[500px] w-full object-cover"
+          className=" max-w-full mb-10"
           alt="About"
         />
-      </div>
 
-      <div className="w-2/3 mx-auto   ">
-        <p className="text-center font-normal text-[32px]   mb-6 ">
-          Behind it all is our culture of exceptional service. We flourish by
-          exceeding our clients' expectations. We aim to establish a reputation
-          throughout Ghana as the trusted building company for your home and
-          commercial projects.
-        </p>
+        <div className="w-2/3 mx-auto">
+          <p className="text-center font-normal text-[32px] leading-tight mb-6">
+            Behind it all is our culture of exceptional service. We flourish by
+            exceeding our clients' expectations. We aim to establish a
+            reputation throughout Ghana as the trusted building company for your
+            home and commercial projects.
+          </p>
+        </div>
       </div>
 
       <div className="w-3/5 mx-auto py-20 ">
@@ -48,29 +48,28 @@ const About: React.FC = () => {
           MEET THE <span className="text-brown"> TEAM</span>
         </h1>
 
-        <p className="text-[32px] text-center  mt-6">
+        <p className="text-[32px] text-center  font-normal mt-6">
           Get up close and personal and know more about our people and why you
           can trust your work with us.
         </p>
 
 
-
+       
       </div>
 
-      <TeamCardRotator />
+      <TeamCardRotator/>
 
       {/* our story */}
 
       <div className="flex mt-24 ">
-        
-        <div className="  flex flex-col w-2/3 bg-black px-10 justify-center  text-white">
+        <div className=" flex flex-col w-2/3 bg-black px-28 justify-center  text-white">
           <h1 className="text-[64px] font-bold">Our Story</h1>
-          <p className="mt-2 font-semibold ">
+          <p className="mt-2 text-[32px] font-semibold ">
             FILLING A NEED (This is a wife's commitment)
           </p>
 
           <div className="  mt-12">
-            <p className="text-[28px]">
+            <p className="text-[28px] font-normal">
               If you know my husband, he's a servant leader who knows he's
               called to serve. No matter the need—whether it is one-on-one
               coaching, mentoring young men, serving the communities, or simply
@@ -81,15 +80,20 @@ const About: React.FC = () => {
             </p>
           </div>
         </div>
-        
+
         <div className="relative">
-  <img src={assets.about.story} className="w-full h-full object-cover" />
-  <div className="absolute inset-0"
-       style={{
-         backgroundImage: 'linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, #000000 90%, #000000 100%)'
-       }}>
-  </div>
-</div>
+          <img
+            src={assets.about.story}
+            className="w-full h-full object-cover"
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, #000000 90%, #000000 100%)",
+            }}
+          ></div>
+        </div>
       </div>
       <Footer />
     </div>

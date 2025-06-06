@@ -4,7 +4,7 @@ import HouseCard from "../layout/HouseCard"; //
 
 const HousePlane = () => {
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col font-inter h-screen overflow-hidden">
       <Header />
       <div className="bg-[#DDE0E7] py-3 px-16 ">
         <div className="flex justify-between items-center">
