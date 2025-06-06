@@ -10,7 +10,7 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col-reverse sm:flex-row sm:justify-between gap-3">
-        <div className="mb-8 md:mb-0 self-center space-y-2 text-xs gap-4 sm:leading-snug sm:text-[20px] md:text-[24px]">
+        <div className="mb-8 md:mb-0 space-y-2 text-xs gap-4 sm:leading-snug sm:text-[20px] md:text-[24px]">
           <p>
             <span className="font-bold">Address:</span> 5601 Democracy Hall, Ste. 300 | Piano, TX 75024
           </p>
