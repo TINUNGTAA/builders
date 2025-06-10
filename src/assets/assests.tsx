@@ -24,7 +24,7 @@ import search_icon from "./images/home/search-icon.svg";
 import volta from "./images/home/volta.jpg";
 import voltaMap from "./images/home/voltaMap.svg";
 import logo from "./images/home/logo.svg";
-import arrowDown from "./images/home/arrowDown.png";
+import arrowDown from "./images/home/arrowDown.svg";
 import bg1 from "./images/home/bg.jpg";
 import north from "./images/home/north.jpg";
 import graceView from "./images/home/graceView.jpg";
@@ -80,7 +80,11 @@ import phase2 from "./images/process/phase2.svg";
 import construct from "./images/process/construction.svg";
 import stars from "./images/trust/star.png";
 import badge from "./images/trust/badge.png";
-import rightArrow from "./images/home/rightArrow.png"
+import rightArrow from "./images/process/rightArrow.svg"
+import arrowDownBold from "./images/process/arrowDownBold.svg"
+
+
+
 
 const assets = {
   process: {
@@ -93,6 +97,7 @@ const assets = {
     phase1,
     phase2,
     construct,
+    arrowDownBold
   },
 
   about: {

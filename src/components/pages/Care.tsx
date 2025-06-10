@@ -33,8 +33,7 @@ const Care = () => {
 
       <div
         className="bg-cover bg-center mb-24 mx-4 md:mx-0 rounded-lg overflow-hidden h-auto md:h-[70vh] flex items-center  "
-        style={{ backgroundImage: `linear-gradient( to right,  #000000CC,  #070B15D8, #0C1427E1, #131F3CEC, #18274CF5,  #1E305E ), 
-        url(${assets.care.image4})`, }}      >
+        style={{ backgroundImage: `linear-gradient( to right,  #000000CC,  #070B15D8, #0C1427E1, #131F3CEC, #18274CF5,  #1E305E ), url(${assets.care.image4})`, }}>
         <div className="w-full md:w-2/6 mx-auto flex flex-col items-center py-8 md:py-0">
           <h1 className="sm:text-[64px] text-lg font-bold sm:leading-snug text-center text-white">
             Don&apos;t wait for long, let&apos;s get <span className="text-brown">started</span>
