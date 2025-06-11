@@ -1,7 +1,7 @@
-import HeroLayout from "../section/hero-layout";
-import assets from "../../assets/assests";
-import Footer from "../layout/Footer";
-import Testimonial from "../layout/Testimonial";
+import HeroLayout from "../components/section/hero-layout";
+import assets from "../assets/assests";
+import Footer from "../components/layout/Footer";
+import Testimonial from "../components/layout/Testimonial";
 
 const Trust = () => {
   return (
@@ -189,13 +189,13 @@ const Trust = () => {
       </div>
       {/* rectangular card */}
       <div className="py-16">
-        <div className="md:w-[894px] md:h-[412px] w-[346px] h-[200px]  mx-auto py-3 md:rounded-[30px]  rounded-[11px] shadow-[2px_4px_15px_0px_#00000040] bg-[#DDE0E7]">
+        <div className="md:w-[894px] md:h-[412px] w-[300px] h-[200px] container  mx-auto py-3 md:rounded-[30px]  rounded-[11px] shadow-[2px_4px_15px_0px_#00000040] bg-[#DDE0E7]">
           <div className="flex flex-col items-center md:rounded-[30px] rounded-[11px] border-brown border bg-[#DDE0E7] md:gap-8  md:px-16 px-8 py-4  md:py-6 w-[95%] h-[98%]  mx-auto text-center">
             <p className="md:text-[48px] text-[14px] font-semibold">
               MAKE AN INFORMED
               <br /> <span className="text-brown">CHOICE</span>
             </p>
-            <p className="md:text-[20px]  text-[12px] mt-3 md:mt-0 font-normal">
+            <p className="md:text-[20px]  text-[12px] mt-2 md:mt-0 font-normal">
               We back ourselves up to deliver and bring the best out of
               anything. Making a choice on quality should never be questioned.
             </p>

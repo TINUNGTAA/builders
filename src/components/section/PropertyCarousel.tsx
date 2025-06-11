@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PropertyCard from "../layout/leftSide";
+import PropertyCard from "../layout/LeftSide";
 import assets from "../../assets/assests";
 
 const PropertySection: React.FC = () => {

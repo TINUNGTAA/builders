@@ -4,8 +4,8 @@ import Gallery from "./Gallery";
 import Plan from "./Plan";
 import Footer from "../layout/Footer";
 import Testimonial from "../layout/Testimonial";
-import Header from "../layout/header2";
-
+import Header from "../layout/Header2";
+import PropertyCarousel from "../layout/Card";
 export const HeroSmall = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     isActive ? "border-b-4 border-b-brown" : "border-b-4 border-transparent";
@@ -18,11 +18,9 @@ export const HeroSmall = () => {
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#00000080] z-0"></div>
 
-       
         <div className="relative z-10">
-  <Header />
-</div>
-
+          <Header />
+        </div>
 
         <div className="absolute inset-0 flex flex-col gap-3 items-center justify-center z-10">
           <div>
@@ -158,28 +156,37 @@ export const HeroSmall = () => {
 
       <div></div>
       <div className="text-inter">
-    <div className="w-[385px] h-[205px] mx-auto flex items-center justify-center  border border-[#666666] rounded-lg">
-        <div className="w-[350px] h-[182px] border px-10  border-[#F0E1D3] rounded-lg">
-            <div className="mx-auto flex  flex-col items-center space-y-3 text-center" >
-                <h1 className="text-[12px] mt-3 font-extrabold">Top Quality</h1>
-                <img src={assets.trust.stars}/>
-                <p className="text-[10px]  font-normal">Everyone, and I mean everyone; from the managers, to the worker
-                     and non-staff were 
-                    very professional. The house is so gorgeous my wife can't stop gushing over it. 
-                    Quality is out of this world. Top job!.</p>
+        <div className="w-[385px] h-[205px] mx-auto flex items-center justify-center  border border-[#666666] rounded-lg">
+          <div className="w-[350px] h-[182px] border px-10  border-[#F0E1D3] rounded-lg">
+            <div className="mx-auto flex  flex-col items-center space-y-3 text-center">
+              <h1 className="text-[12px] mt-3 font-extrabold">Top Quality</h1>
+              <img src={assets.trust.stars} />
+              <p className="text-[10px]  font-normal">
+                Everyone, and I mean everyone; from the managers, to the worker
+                and non-staff were very professional. The house is so gorgeous
+                my wife can't stop gushing over it. Quality is out of this
+                world. Top job!.
+              </p>
 
-                    <p className="font-semibold text-[12px]">Efisah. J</p>
-
+              <p className="font-semibold text-[12px]">Efisah. J</p>
             </div>
-
-            </div>
+          </div>
         </div>
-          
-    </div>
-    <Testimonial/>
+      </div>
+      <Testimonial />
       <div className="">
         <Gallery />
       </div>
+
+<div>
+ 
+</div>
+<div>
+ 
+</div>
+
+<PropertyCarousel/>
+
       <div className="">
         <Plan />
       </div>
@@ -187,5 +194,3 @@ export const HeroSmall = () => {
     </section>
   );
 };
-
-

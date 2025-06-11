@@ -1,7 +1,7 @@
-import HeroLayout from "../section/hero-layout";
-import assets from "../../assets/assests";
-import Footer from "../layout/Footer";
-import TeamCardRotator from "../section/Team";
+import HeroLayout from "../components/section/hero-layout";
+import assets from "../assets/assests";
+import Footer from "../components/layout/Footer";
+import TeamCardRotator from "../components/section/Team";
 
 const About: React.FC = () => {
   return (
@@ -52,12 +52,9 @@ const About: React.FC = () => {
           Get up close and personal and know more about our people and why you
           can trust your work with us.
         </p>
-
-
-       
       </div>
 
-      <TeamCardRotator/>
+      <TeamCardRotator />
 
       {/* our story */}
 

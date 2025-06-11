@@ -1,6 +1,6 @@
-import HeroLayout from "../section/hero-layout";
-import assets from "../../assets/assests";
-import Footer from "../layout/Footer";
+import HeroLayout from "../components/section/hero-layout";
+import assets from "../assets/assests";
+import Footer from "../components/layout/Footer";
 const Process = () => {
   return (
     <div className="font-inter">

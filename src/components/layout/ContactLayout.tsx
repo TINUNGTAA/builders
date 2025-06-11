@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./header2";
+import Header from "./Header2";
 
 interface BackgroundLayoutProps {
   backgroundImage: string;
