@@ -1,18 +1,20 @@
-import HeroLayout from "../section/hero-layout";
-import assets from "../../assets/assests";
-import Footer from "../layout/Footer";
-import Testimonial from "../layout/Testimonial";
+import HeroLayout from "../components/section/hero-layout";
+import assets from "../assets/assests";
+import Footer from "../components/layout/Footer";
+import Testimonial from "../components/layout/Testimonial";
 
 const Trust = () => {
   return (
-    <div className="font-inter">
+    <div className="font-inter overflow-x-hidden">
       <HeroLayout backgroundImage={assets.trust.bg6}>
-        <div className="text-white h-[550px] flex items-center justify-center text-center">
-          <h1 className="md:text-[64px] text-[24px] h-[250px] font-bold">
-            How Trust <br />
-            Is
-            <span className="text-brown px-3">Built</span>
-          </h1>
+        <div className="text-white h-[491px] md:h-[580px] flex items-center justify-center w-full">
+          <div className="text-center w-full md:mt-[280px] mb-[200px]">
+            <h1 className="md:text-[64px] text-center text-[24px] font-bold">
+              How Trust <br />
+              Is
+              <span className="text-brown px-3">Built</span>
+            </h1>
+          </div>
         </div>
       </HeroLayout>
 
@@ -26,8 +28,8 @@ const Trust = () => {
       </div>
 
       {/* card and badge */}
-      <div className=" flex flex-col md:flex-row  md:px-28 py-8 md:py-16 items-center  md:gap-[250px] bg-blue">
-        <div className=" flex-col   md:w-1/5">
+      <div className=" flex flex-col md:flex-row px-0  md:pl-28 md:pr-12 py-8 md:py-16 items-center  md:gap-[250px] bg-blue">
+        <div className=" flex-col  ">
           <img
             src={assets.trust.review}
             alt="Customer reviews"
@@ -38,9 +40,9 @@ const Trust = () => {
           </p>
         </div>
         {/* 2 top quality cards */}
-        <div className=" hidden md:flex   gap-12">
+        <div className=" hidden md:flex  gap-5">
           <div className="w-[440px] h-[470px] py-12 rounded-3xl shadow-lg bg-[#DDE0E7]">
-            <div className="flex flex-col items-center rounded-xl border-brown border bg-[#DDE0E7] gap-6 px-6 w-[90%] h-[380px] mx-auto text-center">
+            <div className="flex flex-col items-center rounded-xl border-brown border bg-[#DDE0E7] gap-6 px-6 w-[400px] h-[380px] mx-auto text-center">
               <p className="text-[32px] mt-3 text-center font-extrabold">
                 Top Quality <br />
                 <img
@@ -60,7 +62,7 @@ const Trust = () => {
           </div>
 
           <div className="w-[440px] h-[470px] py-12 rounded-3xl shadow-lg bg-[#DDE0E7]">
-            <div className="flex flex-col items-center rounded-xl border-brown border bg-[#DDE0E7] gap-6 px-6 w-[90%] h-[380px] mx-auto text-center">
+            <div className="flex flex-col items-center rounded-xl border-brown border bg-[#DDE0E7] gap-6 px-6 w-[400px] h-[380px] mx-auto text-center">
               <p className="md:text-[32px]  t mt-3 text-center font-extrabold">
                 Customer Satisfaction <br />
                 <img
@@ -94,11 +96,11 @@ const Trust = () => {
         </p>
       </div>
 
-      <div className="flex rounded-full mx-auto items-center w-[260px] h-[260px] md:w-[680px] md:h-[680px] mb-16 border-brown border-[5px] bg-gray-500">
-        <div className="flex-col items-center justify-center mx-auto w-[240px] h-[240px] md:w-[654px] md:h-[654px] border-brown border-[5px] rounded-full bg-blue space-y-1 md:space-y-6  px-6 md:px-24 py-6 md:py-12">
+      <div className="flex rounded-full mx-auto items-center w-[260px] h-[260px] md:w-[600px] md:h-[600px] mb-16 border-brown border-[5px] bg-gray-500">
+        <div className="flex-col items-center justify-center mx-auto w-[240px] h-[240px] md:w-[580px] md:h-[580px] border-brown border-[5px] rounded-full bg-blue  space-y-0 md:space-y-6  px-6 md:px-24 py-6 md:py-12">
           <img
             src={assets.trust.badge}
-            className="mx-auto w-[24px] h-[24px]"
+            className="mx-auto w-12 h-12 md:w-20 md:h-20  "
             alt="Trust badge"
           />
           <img
@@ -189,13 +191,13 @@ const Trust = () => {
       </div>
       {/* rectangular card */}
       <div className="py-16">
-        <div className="md:w-[894px] md:h-[412px] w-[346px] h-[200px]  mx-auto py-3 md:rounded-[30px]  rounded-[11px] shadow-[2px_4px_15px_0px_#00000040] bg-[#DDE0E7]">
+        <div className="md:w-[894px] md:h-[412px] w-[300px] h-[200px]  mx-auto py-3 md:rounded-[30px]  rounded-[11px] shadow-[2px_4px_15px_0px_#00000040] bg-[#DDE0E7]">
           <div className="flex flex-col items-center md:rounded-[30px] rounded-[11px] border-brown border bg-[#DDE0E7] md:gap-8  md:px-16 px-8 py-4  md:py-6 w-[95%] h-[98%]  mx-auto text-center">
             <p className="md:text-[48px] text-[14px] font-semibold">
               MAKE AN INFORMED
               <br /> <span className="text-brown">CHOICE</span>
             </p>
-            <p className="md:text-[20px]  text-[12px] mt-3 md:mt-0 font-normal">
+            <p className="md:text-[20px]  text-[12px] mt-2 md:mt-0 font-normal">
               We back ourselves up to deliver and bring the best out of
               anything. Making a choice on quality should never be questioned.
             </p>

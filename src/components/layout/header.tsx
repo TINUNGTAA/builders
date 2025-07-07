@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Head: React.FC = () => {
   return (
-    <header className="px-28 font-inter bg-[#0D162A33] ">
+    <header className="px-28 font-inter  bg-[#0D162A33] ">
       <div className="flex flex-row  items-center gap-[198px]">
         <div>
           {" "}
@@ -12,7 +12,7 @@ const Head: React.FC = () => {
           </Link>
         </div>
 
-        <ul className="flex space-x-16 text-white items-center text-xl">
+        <ul className="flex space-x-12 text-white items-center text-[18px]">
           <li>
             <Link
               to="#"

@@ -3,7 +3,7 @@ import BlueBand from "../layout/blueBand";
 
 const Plan: React.FC = () => {
   return (
-    <section className="flex font-inter md:h-[680px] relative overflow-hidden">
+    <section className=" cotainer flex font-inter md:h-[680px] relative overflow-hidden">
       <div className="flex gap-20 md:gap-[250px] md:px-28 py-18 mt-12">
         <div className="flex">
           <img src={assets.home.plan} className="" />

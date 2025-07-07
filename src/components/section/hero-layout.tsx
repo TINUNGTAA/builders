@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../layout/header2"; // updated Header
+import Header from "../layout/header2"; 
 import Band from "../layout/band";
 
 interface BackgroundLayoutProps {
@@ -12,26 +12,30 @@ const HeroLayout: React.FC<BackgroundLayoutProps> = ({
   children,
 }) => {
   return (
-    <section className="flex flex-col  font-inter overflow-hidden">
+    <section className="flex flex-col font-inter overflow-hidden">
+      {/* Static Header - needs to be above overlay */}
+      <header className="w-full fixed top-0 left-0 z-50">
+          <Header />
+        </header>
       <div
-        className="w-full h-full bg-cover bg-no-repeat bg-center relative flex flex-col"
+        className="w-full h-[230px] md:h-full bg-cover bg-no-repeat bg-center relative flex flex-col"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-         <div className="absolute inset-0 bg-black/50 md:hidden" />
+        {/* Overlay for small screens only (below md breakpoint) */}
+        <div className="absolute inset-0 bg-[#00000080] md:bg-transparent z-10" />
 
-        {/* Responsive Header */}
-        <Header />
 
-        {/* Centered Content (pushed down so it doesn’t sit under the header) */}
-        <div className="flex flex-1 items-center justify-center md:mb-[150px] sm:px-8">
+        {/* Centered Content - needs to be above overlay */}
+        <div className="flex flex-1 mx-auto items-center justify-center md:mb-[150px] sm:px-8 relative z-20">
           {children}
         </div>
 
-        {/* Responsive Band at the Bottom */}
-        <div className="absolute bottom-0 w-full">
+        
+      </div>
+      {/* Responsive Band at the Bottom - needs to be above overlay */}
+      <div className="mt-0 w-full z-20">
           <Band />
         </div>
-      </div>
     </section>
   );
 };

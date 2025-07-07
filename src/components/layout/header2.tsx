@@ -62,7 +62,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="w-full md:bg-blue px-4 sm:px-28 py-4 relative">
+    <header className="w-full h-[117px] md:bg-blue px-4 md:px-28  relative">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
@@ -71,10 +71,10 @@ const Header: React.FC = () => {
             alt="Logo"
             className="sm:h-[117px] sm:w-[308px] h-10"
           />
-        </Link>
+        </Link> 
 
         {/* Desktop Nav Links */}
-        <ul className="hidden sm:flex items-center gap-10 text-white text-xl">
+        <ul className="hidden sm:flex items-center font-medium gap-10 md:pl-[150px] md:pr-[10px] text-white text-[18px]">
           {navItems.map((item) => (
             <li key={item.name} className="relative group">
               <Link

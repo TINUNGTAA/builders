@@ -1,18 +1,18 @@
-import assets from "../../assets/assests";
-import HeroLayout from "../section/hero-layout";
-import Footer from "../layout/Footer";
+import assets from "../assets/assests";
+import HeroLayout from "../components/section/hero-layout";
+import Footer from "../components/layout/Footer";
 
 const Care = () => {
   return (
     <div className="">
       <HeroLayout backgroundImage={assets.care.bg8}>
-        <div className="text-white text-center  h-[550px] flex items-center justify-center">
-          <h1 className="text-[32px] md:text-[64px] lg:text-[64px] font-bold leading-snug">
-            CUSTOMER CARE
-            <br />
-            WITH A
-            <span className="text-brown px-2">Heart</span>
-          </h1>
+        <div className="text-white h-[491px] md:h-[580px] flex items-center justify-center w-full">
+          <div className="text-center w-full md:mt-[280px] mb-[200px]">
+            <h1 className="md:text-[64px] text-center text-[24px] font-bold">
+              Customer Care <br />
+              With A<span className="text-brown px-3"> Heart</span>
+            </h1>
+          </div>
         </div>
       </HeroLayout>
 
@@ -33,17 +33,21 @@ const Care = () => {
 
       <div
         className="bg-cover bg-center mb-24 mx-4 md:mx-0 rounded-lg overflow-hidden h-auto md:h-[70vh] flex items-center  "
-        style={{ backgroundImage: `linear-gradient( to right,  #000000CC,  #070B15D8, #0C1427E1, #131F3CEC, #18274CF5,  #1E305E ), url(${assets.care.image4})`, }}>
+        style={{
+          backgroundImage: `linear-gradient( to right,  #000000CC,  #070B15D8, #0C1427E1, #131F3CEC, #18274CF5,  #1E305E ), 
+        url(${assets.care.image4})`,
+        }}
+      >
         <div className="w-full md:w-2/6 mx-auto flex flex-col items-center py-8 md:py-0">
           <h1 className="sm:text-[64px] text-lg font-bold sm:leading-snug text-center text-white">
-            Don&apos;t wait for long, let&apos;s get <span className="text-brown">started</span>
+            Don’t wait for long, let’s get{" "}
+            <span className="text-brown">started</span>
           </h1>
           <button className="mt-6 md:mt-8 sm:p-[18px] p-4 md:px-8 sm:text-[35px] text-lg rounded-lg bg-brown">
             Customer Care
           </button>
         </div>
       </div>
-
 
       <Footer />
     </div>
