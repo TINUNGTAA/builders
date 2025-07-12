@@ -14,7 +14,7 @@ const ContactLayout: React.FC<BackgroundLayoutProps> = ({
     <section className="flex flex-col font-inter h-screen overflow-hidden">
       <div
         className="w-full h-full bg-cover bg-center relative flex flex-col"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url(${backgroundImage})` }} //which background image was used here, how and why?
       >
         <Header />
 

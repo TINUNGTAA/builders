@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Trust from "./components/pages/Trust";
 import Gallery from "./components/section/Gallery";
 import  {HeroSmall}  from "./components/section/HeroSmall";
+import Contact from "./components/pages/Contact-Us";
+
 export default function App() {
   const router = createBrowserRouter([
     {
@@ -29,6 +31,11 @@ export default function App() {
     {
       path: "/trust-us",
       element: <Trust />,
+     
+    },
+    {
+      path: "/contact-us",
+      element: <Contact />,
      
     },
 

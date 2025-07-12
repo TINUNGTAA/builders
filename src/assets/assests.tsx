@@ -69,6 +69,7 @@ import star from "./images/trust/star-badge.svg";
 import bg8 from "./images/care/bg8.jpg";
 import image4 from "./images/care/images3.jpg";
 import image5 from "./images/contact/image3.png";
+import image6 from "./images/contact/image6.png";
 import bg9 from "./images/process/bg9.jpg";
 import team from "./images/process/team.png";
 import left from "./images/process/arrow-left.svg";
@@ -135,6 +136,7 @@ const assets = {
   contact: {
     map,
     image5,
+    image6,
   },
   home: {
     hambeger,

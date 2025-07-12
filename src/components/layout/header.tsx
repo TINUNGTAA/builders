@@ -51,7 +51,7 @@ const Head: React.FC = () => {
           </li>
           <li>
             <Link
-              to="#"
+              to="/contact-us"
               className="flex items-center hover:text-blue-500 gap-1"
             >
               Contact Us
